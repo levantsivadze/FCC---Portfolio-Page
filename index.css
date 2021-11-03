@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300;1,600&display=swap');
+body {
+  font-family: 'Josefin Sans', sans-serif ;
+  font-size: 1rem;
+  font-weight: 600;
+  color:ghostwhite;
+  margin: 0;
+  padding: 0;
+}
+
+
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color:rgba(177, 43, 43, 0.8);
+  background-co
+}
+
+.nav ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  float: right;
+  margin-right: 20px;
+}
+
+
+
+li a {
+  display: inline-block;
+  color:whitesmoke;
+  padding: 30px 30px;
+  font-size: 2.5rem;;
+  text-align: center;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+li a:hover {
+  background-color:rgb(98, 111, 124);
+}
+
+.welcome-section {  
+  background-image: url("https://wallpapers-base.com/wp-content/uploads/2018/08/high_quality_wallpaper_HD_1080_IDS_1018067.jpg");
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.welcome-section h1 {
+  color: whitesmoke;
+  font-size: 5rem;
+  font-style: oblique;
+}
+.welcome-section p {
+  margin-top: -2%;
+  margin-left: -30%;
+  color: rgb(187, 14, 14);
+  font-size: 3rem;
+  font-style: italic;
+  
+  font-weight: 300;
+}
+
+.projects-section {
+  text-align: center;
+  background-color: rgb(28, 62, 105);
+  padding: 10rem 3rem;
+}
+
+.projects-section-header {
+  font-size: 3rem;
+  margin: 0 auto 6rem auto;
+  text-underline-offset: 0.6rem;
+  text-decoration: underline;
+}
+
+.projects-grid {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+.project-image {
+  height: calc(100% - 6.8rem);
+  width: 100%;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color:ghostwhite;
+}
+.project-title{
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: ghostwhite;
+  border-style: hidden;
+  background-color: #303841;
+  padding: 2rem 0.5rem;
+  margin-top: 0;
+}
+
+.project {
+  background: #303841;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+}
+
+.code {
+  color: #303841;
+  transition: color 0.3s ease-out;
+}
+
+.project:hover .code {
+  color: #ff7f50;
+}
+
+.profile {
+  text-align: center;
+  font-size: 3rem;
+  border-style: solid;
+  background-color: rgb(131, 36, 27);
+  padding: 2rem 0.5rem;
+}
+
+.profile:hover {
+  border-color: mediumspringgreen;
+  background-color:transparent ;
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 60%;
+  }
+}
+
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+  html {
+    font-size: 58%;
+  }
+}
+
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
+  html {
+    font-size: 55%;
+  }
+}
